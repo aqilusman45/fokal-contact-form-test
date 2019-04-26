@@ -1,0 +1,173 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  background: linear-gradient(45deg, #00dbde, #fc00ff);
+  padding: 20px 0;
+}
+
+.wrapper .form {
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 49px;
+  width: 500px;
+}
+
+.wrapper .form .form-heading h1 {
+  font-weight: 800;
+  font-size: 39px;
+  display: block;
+  color: #333333;
+  margin: 0 0 30px 0;
+  line-height: 46px;
+}
+
+.wrapper .form .form-wrapper {
+  text-align: left;
+}
+
+.wrapper .form .form-wrapper form label {
+  font-size: 13px;
+  width: 100%;
+  line-height: 19px;
+  color: #666666;
+}
+
+.wrapper .form .form-wrapper form div {
+  width: 100%;
+}
+
+.wrapper .form .form-wrapper form label input::placeholder {
+  color: #adadad;
+  font-weight: 500;
+}
+
+.wrapper .form .form-wrapper form label textarea::placeholder {
+  color: #adadad;
+  font-weight: 500;
+}
+
+.wrapper .form .form-wrapper form label input {
+  border: none;
+  padding: 20px 0;
+  font-size: 18px;
+  width: 100%;
+}
+.wrapper .form .form-wrapper form label  .input-container{
+  border-bottom: 1px solid #d9d9d9;
+  overflow: hidden;
+}
+
+.wrapper .form .form-wrapper form label textarea {
+  padding: 20px 0;
+  border: none;
+  height: 120px;
+  font-size: 18px;
+  width: 100%;
+}
+
+.wrapper .form .form-wrapper form label select {
+  padding: 20px 0;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  width: 100%;
+}
+
+.wrapper .form .form-wrapper form label .span-animate::before{
+  width: 0%;
+  content: "";
+  display: block;
+  height: 2px;
+  background: #d9d9d9;
+} 
+
+.wrapper .form .form-wrapper form input:focus + .span-animate::before {
+  width: 100%;
+  content: "";
+  display: block;
+  height: 2px;
+  transition: width 0.4s linear;
+  background: #7f7f7f;
+}
+
+.wrapper .form .form-wrapper form textarea:focus + .span-animate::before {
+  width: 100%;
+  height: 2px;
+  transition: width 0.4s linear;
+  background: #7f7f7f;
+}
+
+.wrapper .form .form-wrapper form label select option {
+  margin: 20px;
+  font-size: 15px;
+  line-height: 18px;
+  width: 100%;
+}
+
+.wrapper .form .form-wrapper form div {
+  margin: 5px 0;
+}
+
+.wrapper .form .form-wrapper form label textarea:focus {
+  outline-width: 0;
+}
+
+.wrapper .form .form-wrapper form label input:focus {
+  outline-width: 0;
+}
+
+.wrapper .form .form-wrapper form label select:focus {
+  outline-width: 0;
+}
+
+.wrapper .form .form-wrapper form button:focus {
+  outline-width: 0;
+}
+
+.wrapper .form .form-wrapper  .container-contact100-form-btn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.wrapper .form .form-wrapper  .contact100-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background: -webkit-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  border-radius: 25px;
+  background-size: 300%;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  transition: all 0.4s;
+  border: none;
+}
+.wrapper .form .form-wrapper .contact100-form-btn i {
+  margin-left: 10px;
+  transition: all 0.4s;
+}
+.wrapper .form .form-wrapper .contact100-form-btn:hover {
+  background-size: 150%;
+}
+.wrapper .form .form-wrapper .contact100-form-btn:hover i {
+  transform: translateX(10px);
+}
+
+
+.alert-validate::after{
+  content: "\f06a";
+    font-family: FontAwesome;
+    display: block;
+    position: absolute;
+    color: #c80000;
+    font-size: 16px;
+    top: 58%;
+}
